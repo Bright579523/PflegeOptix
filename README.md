@@ -1,12 +1,19 @@
-# PflegeOptix — Elderly Care Planning & Resource Allocation Dashboard
+# 🏥 PflegeOptix — Elderly Care Planning & Resource Allocation Dashboard
 
-**PflegeOptix**
+An interactive decision-support application analyzing demographic trends, predicting nursing demand, and optimizing care bed allocation across German districts (**Landkreise**) for **2025–2040**.
 
-An interactive planning dashboard for forecasting and optimizing elderly care home bed allocation across German districts (Landkreise) for 2025–2040.
+🔗 **Live Interactive Dashboard**: [pflegeoptix.streamlit.app](https://pflegeoptix.streamlit.app/)
 
-🔗 **Live Dashboard**: [pflegeoptix.streamlit.app](https://pflegeoptix.streamlit.app/)
+---
 
-The project addresses the demographic challenge of Germany's aging population by combining socioeconomic predictors, time-series forecasting, and linear programming to ensure that new bed budgets are allocated fairly, preventing undersupply in both dense urban centers and dispersed rural areas.
+## 🌟 What You Can Do in the Live Dashboard
+
+Explore a data-driven approach to addressing Germany's aging demographic challenges. The live dashboard features:
+
+* **📈 2040 Population Forecasts**: Interactive trend analysis for all 399 German districts. See how local demographics shift over the next 15 years using Facebook Prophet forecasting.
+* **🛏️ Real-Time Budget Optimization**: Adjust care bed quotas dynamically with the **Smart Budget Slider** and see the **PuLP Optimization Engine** resolve resource allocation on-the-fly, balancing support between dense cities and rural zones (Min-Max Fairness).
+* **⚖️ Head-to-Head District Comparison**: Compare any two districts side-by-side on metrics like care gaps, current beds, population growth, and single-person households, accompanied by automated **AI Policy Recommendations**.
+* **🧠 Explainable AI & Transparency**: Inspect the machine learning drivers shaping care bed demand. Explore pre-computed **SHAP Feature Importance** plots and the model **Ablation Study** showing the removal of proxy leakage.
 
 ---
 
