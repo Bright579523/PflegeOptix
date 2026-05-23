@@ -33,11 +33,10 @@ pip install -r requirements.txt
 ```
 
 ### 3. Launch the Streamlit App
-Navigate to the app folder and run Streamlit:
+Run Streamlit directly from the root directory:
 
 ```bash
-cd PflegeOptix
-streamlit run app.py
+streamlit run PflegeOptix/app.py
 ```
 Open `http://localhost:8501` in your browser.
 
