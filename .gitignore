@@ -21,10 +21,10 @@ Thumbs.db
 ehthumbs.db
 Desktop.ini
 
-# Exclude raw and intermediate datasets in the root
-dataset/
-reports/
-folder_tree.txt
+# Exclude raw and intermediate datasets ONLY in the root
+/dataset/
+/reports/
+/folder_tree.txt
 
 # Exclude proposal, interview guides, and notes
 note*.txt

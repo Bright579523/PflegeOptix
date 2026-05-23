@@ -1,0 +1,400 @@
+AGS,Region,GeoJSON_NAME_3,Match_Type
+01001,"Flensburg, kreisfreie Stadt",Flensburg Städte,direct
+01002,"Kiel, kreisfreie Stadt",Kiel Städte,direct
+01003,"Lübeck, kreisfreie Stadt, Hansestadt",Lübeck Städte,direct
+01004,"Neumünster, kreisfreie Stadt",Neumünster Städte,direct
+01051,"Dithmarschen, Kreis",Dithmarschen,direct
+01053,"Herzogtum Lauenburg, Kreis",Lauenburg,substring
+01054,"Nordfriesland, Kreis",Nordfriesland,direct
+01055,"Ostholstein, Kreis",Ostholstein,direct
+01056,"Pinneberg, Kreis",Pinneberg,direct
+01057,"Plön, Kreis",Plön,direct
+01058,"Rendsburg-Eckernförde, Kreis",Rendsburg-Eckernförde,direct
+01059,"Schleswig-Flensburg, Kreis",Schleswig-Flensburg,direct
+01060,"Segeberg, Kreis",Segeberg,direct
+01061,"Steinburg, Kreis",Steinburg,direct
+01062,"Stormarn, Kreis",Stormarn,direct
+03101,"Braunschweig, kreisfreie Stadt",Braunschweig Städte,direct
+03102,"Salzgitter, kreisfreie Stadt",Salzgitter Städte,direct
+03103,"Wolfsburg, kreisfreie Stadt",Wolfsburg Städte,direct
+03151,"Gifhorn, Landkreis",Gifhorn,direct
+03153,"Goslar, Landkreis",Goslar,direct
+03154,"Helmstedt, Landkreis",Helmstedt,direct
+03155,"Northeim, Landkreis",Northeim,direct
+03157,"Peine, Landkreis",Peine,direct
+03158,"Wolfenbüttel, Landkreis",Wolfenbüttel,direct
+03159,"Göttingen, Landkreis",Göttingen,direct
+03241,"Region Hannover, Landkreis",,unmatched
+03251,"Diepholz, Landkreis",Diepholz,direct
+03252,"Hameln-Pyrmont, Landkreis",,unmatched
+03254,"Hildesheim, Landkreis",Hildesheim,direct
+03255,"Holzminden, Landkreis",Holzminden,direct
+03256,"Nienburg (Weser), Landkreis",Nienburg,direct
+03257,"Schaumburg, Landkreis",Schaumburg,direct
+03351,"Celle, Landkreis",Celle,direct
+03352,"Cuxhaven, Landkreis",Cuxhaven,direct
+03353,"Harburg, Landkreis",Harburg,direct
+03354,"Lüchow-Dannenberg, Landkreis",Lüchow-Dannenberg,direct
+03355,"Lüneburg, Landkreis",Lüneburg,direct
+03356,"Osterholz, Landkreis",Osterholz,direct
+03357,"Rotenburg (Wümme), Landkreis",Rotenburg,direct
+03358,Heidekreis,,unmatched
+03359,"Stade, Landkreis",Stade,direct
+03360,"Uelzen, Landkreis",Uelzen,direct
+03361,"Verden, Landkreis",Verden,direct
+03401,"Delmenhorst, kreisfreie Stadt",,unmatched
+03402,"Emden, kreisfreie Stadt",Emden Städte,direct
+03403,"Oldenburg (Oldenburg), kreisfreie Stadt",Oldenburg Städte,direct
+03404,"Osnabrück, kreisfreie Stadt",Osnabrück,direct
+03405,"Wilhelmshaven, kreisfreie Stadt",Wilhelmshaven Städte,direct
+03451,"Ammerland, Landkreis",Ammerland,direct
+03452,"Aurich, Landkreis",Aurich,direct
+03453,"Cloppenburg, Landkreis",Cloppenburg,direct
+03454,"Emsland, Landkreis",Emsland,direct
+03455,"Friesland, Landkreis",Friesland,direct
+03456,"Grafschaft Bentheim, Landkreis",Grafschaft Bentheim,direct
+03457,"Leer, Landkreis",Leer,direct
+03458,"Oldenburg, Landkreis",Oldenburg Städte,direct
+03459,"Osnabrück, Landkreis",Osnabrück,direct
+03460,"Vechta, Landkreis",Vechta,direct
+03461,"Wesermarsch, Landkreis",Wesermarsch,direct
+03462,"Wittmund, Landkreis",Wittmund,direct
+04011,"Bremen, kreisfreie Stadt",Bremen Städte,direct
+04012,"Bremerhaven, kreisfreie Stadt",,unmatched
+05111,"Düsseldorf, kreisfreie Stadt",Düsseldorf Städte,direct
+05112,"Duisburg, kreisfreie Stadt",Duisburg Städte,direct
+05113,"Essen, kreisfreie Stadt",Essen Städte,direct
+05114,"Krefeld, kreisfreie Stadt",Krefeld Städte,direct
+05116,"Mönchengladbach, kreisfreie Stadt",Mönchengladbach Städte,direct
+05117,"Mülheim an der Ruhr, kreisfreie Stadt",Mülheim Städte,substring
+05119,"Oberhausen, kreisfreie Stadt",Oberhausen Städte,direct
+05120,"Remscheid, kreisfreie Stadt",Remscheid Städte,direct
+05122,"Solingen, kreisfreie Stadt",Solingen Städte,direct
+05124,"Wuppertal, kreisfreie Stadt",Wuppertal Städte,direct
+05154,"Kleve, Kreis",,unmatched
+05158,"Mettmann, Kreis",Mettmann,direct
+05162,Rhein-Kreis Neuss,Rhein-Kreis Neuss,direct
+05166,"Viersen, Kreis",Viersen,direct
+05170,"Wesel, Kreis",Wesel,direct
+05314,"Bonn, kreisfreie Stadt",Bonn Städte,direct
+05315,"Köln, kreisfreie Stadt",,unmatched
+05316,"Leverkusen, kreisfreie Stadt",Leverkusen Städte,direct
+05334,"Städteregion Aachen, Kreis",Aachen,substring
+05358,"Düren, Kreis",Düren,direct
+05362,Rhein-Erft-Kreis,Rhein-Erft-Kreis,direct
+05366,"Euskirchen, Kreis",Euskirchen,direct
+05370,"Heinsberg, Kreis",Heinsberg,direct
+05374,Oberbergischer Kreis,Oberbergischer Kreis,direct
+05378,Rheinisch-Bergischer Kreis,Rheinisch-Bergischer Kreis,direct
+05382,Rhein-Sieg-Kreis,Rhein-Sieg,substring
+05512,"Bottrop, kreisfreie Stadt",Bottrop Städte,direct
+05513,"Gelsenkirchen, kreisfreie Stadt",Gelsenkirchen Städte,direct
+05515,"Münster, kreisfreie Stadt",Münster Städte,direct
+05554,"Borken, Kreis",Borken,direct
+05558,"Coesfeld, Kreis",Coesfeld,direct
+05562,"Recklinghausen, Kreis",Recklinghausen,direct
+05566,"Steinfurt, Kreis",Steinfurt,direct
+05570,"Warendorf, Kreis",Warendorf,direct
+05711,"Bielefeld, kreisfreie Stadt",Bielefeld Städte,direct
+05754,"Gütersloh, Kreis",Gütersloh,direct
+05758,"Herford, Kreis",Herford,direct
+05762,"Höxter, Kreis",Höxter,direct
+05766,"Lippe, Kreis",Lippe,direct
+05770,"Minden-Lübbecke, Kreis",Minden-Lübbecke,direct
+05774,"Paderborn, Kreis",Paderborn,direct
+05911,"Bochum, kreisfreie Stadt",Bochum Städte,direct
+05913,"Dortmund, kreisfreie Stadt",Dortmund Städte,direct
+05914,"Hagen, kreisfreie Stadt",Hagen Städte,direct
+05915,"Hamm, kreisfreie Stadt",Hamm Städte,direct
+05916,"Herne, kreisfreie Stadt",Herne Städte,direct
+05954,Ennepe-Ruhr-Kreis,Ennepe-Ruhr,substring
+05958,Hochsauerlandkreis,Hochsauerlandkreis,direct
+05962,Märkischer Kreis,Märkischer Kreis,direct
+05966,"Olpe, Kreis",Olpe,direct
+05970,"Siegen-Wittgenstein, Kreis",Siegen-Wittgenstein,direct
+05974,"Soest, Kreis",Soest,direct
+05978,"Unna, Kreis",Unna,direct
+06411,"Darmstadt, kreisfreie Stadt, Wissenschaftsstadt",Darmstadt Städte,direct
+06412,"Frankfurt am Main, kreisfreie Stadt",Frankfurt am Main Städte,direct
+06413,"Offenbach am Main, kreisfreie Stadt",Offenbach am Main Städte,direct
+06414,"Wiesbaden, kreisfreie Stadt, Landeshauptstadt",Wiesbaden Städte,direct
+06431,"Bergstraße, Landkreis",Bergstraße,direct
+06432,"Darmstadt-Dieburg, Landkreis",Darmstadt-Dieburg,direct
+06433,"Groß-Gerau, Landkreis",Groß-Gerau,direct
+06434,Hochtaunuskreis,Hochtaunuskreis,direct
+06435,Main-Kinzig-Kreis,Main-Kinzig-Kreis,direct
+06436,Main-Taunus-Kreis,Main-Taunus-Kreis Städte,direct
+06437,Odenwaldkreis,Odenwaldkreis,direct
+06438,"Offenbach, Landkreis",Offenbach,direct
+06439,Rheingau-Taunus-Kreis,Rheingau-Taunus-Kreis,direct
+06440,Wetteraukreis,Wetteraukreis,direct
+06531,"Gießen, Landkreis",Gießen,direct
+06532,Lahn-Dill-Kreis,Lahn-Dill-Kreis,direct
+06533,"Limburg-Weilburg, Landkreis",Limburg-Weilburg,direct
+06534,"Marburg-Biedenkopf, Landkreis",Marburg-Biedenkopf,direct
+06535,Vogelsbergkreis,Vogelsbergkreis,direct
+06611,"Kassel, kreisfreie Stadt, documenta-Stadt",Kassel,direct
+06631,"Fulda, Landkreis",Fulda,direct
+06632,"Hersfeld-Rotenburg, Landkreis",Hersfeld-Rotenburg,direct
+06633,"Kassel, Landkreis",Kassel,direct
+06634,Schwalm-Eder-Kreis,Schwalm-Eder-Kreis,direct
+06635,"Waldeck-Frankenberg, Landkreis",Waldeck-Frankenberg,direct
+06636,Werra-Meißner-Kreis,Werra-Meißner-Kreis,direct
+07111,"Koblenz, kreisfreie Stadt",Enz,substring
+07131,"Ahrweiler, Landkreis",Ahrweiler,direct
+07132,"Altenkirchen (Westerwald), Landkreis",Altenkirchen,direct
+07133,"Bad Kreuznach, Landkreis",Bad Kreuznach,direct
+07134,"Birkenfeld, Landkreis",Birkenfeld,direct
+07135,"Cochem-Zell, Landkreis",Cochem-Zell,direct
+07137,"Mayen-Koblenz, Landkreis",Mayen-Koblenz,direct
+07138,"Neuwied, Landkreis",Neuwied,direct
+07140,Rhein-Hunsrück-Kreis,Rhein-Hunsrück,substring
+07141,Rhein-Lahn-Kreis,Rhein-Lahn,substring
+07143,Westerwaldkreis,Westerwaldkreis,direct
+07211,"Trier, kreisfreie Stadt",Trier Städte,direct
+07231,"Bernkastel-Wittlich, Landkreis",Bernkastel-Wittlich,direct
+07232,Eifelkreis Bitburg-Prüm,Bitburg-Prüm,substring
+07233,"Vulkaneifel, Landkreis",Vulkaneifel,direct
+07235,"Trier-Saarburg, Landkreis",Trier-Saarburg,direct
+07311,"Frankenthal (Pfalz), kreisfreie Stadt",Frankenthal Städte,direct
+07312,"Kaiserslautern, kreisfreie Stadt",Kaiserslautern,direct
+07313,"Landau in der Pfalz, kreisfreie Stadt",Landau Städte,substring
+07314,"Ludwigshafen am Rhein, kreisfreie Stadt",Ludwigshafen Städte,substring
+07315,"Mainz, kreisfreie Stadt",Mainz Städte,direct
+07316,"Neustadt an der Weinstraße, kreisfreie Stadt",Neustadt Städte,substring
+07317,"Pirmasens, kreisfreie Stadt",,unmatched
+07318,"Speyer, kreisfreie Stadt",Speyer Spires Städte,substring
+07319,"Worms, kreisfreie Stadt",Worms Städte,direct
+07320,"Zweibrücken, kreisfreie Stadt",Zweibrücken Städte,direct
+07331,"Alzey-Worms, Landkreis",Alzey-Worms,direct
+07332,"Bad Dürkheim, Landkreis",Bad Dürkheim,direct
+07333,Donnersbergkreis,Donnersbergkreis,direct
+07334,"Germersheim, Landkreis",Germersheim,direct
+07335,"Kaiserslautern, Landkreis",Kaiserslautern,direct
+07336,"Kusel, Landkreis",Kusel,direct
+07337,"Südliche Weinstraße, Landkreis",Südliche Weinstraße,direct
+07338,Rhein-Pfalz-Kreis,Rhein-Pfalz-Kreis,direct
+07339,"Mainz-Bingen, Landkreis",Mainz-Bingen,direct
+07340,"Südwestpfalz, Landkreis",Südwestpfalz,direct
+08111,"Stuttgart, Stadtkreis",Stuttgart Städte,direct
+08115,"Böblingen, Landkreis",Böblingen,direct
+08116,"Esslingen, Landkreis",Esslingen,direct
+08117,"Göppingen, Landkreis",Göppingen,direct
+08118,"Ludwigsburg, Landkreis",Ludwigsburg,direct
+08119,"Rems-Murr-Kreis, Landkreis",Rems-Murr-Kreis,direct
+08121,"Heilbronn, Stadtkreis",Heilbronn,direct
+08125,"Heilbronn, Landkreis",Heilbronn,direct
+08126,"Hohenlohekreis, Landkreis",Hohenlohe,substring
+08127,"Schwäbisch Hall, Landkreis",Schwäbisch Hall,direct
+08128,"Main-Tauber-Kreis, Landkreis",Main-Tauber,substring
+08135,"Heidenheim, Landkreis",Heidenheim,direct
+08136,"Ostalbkreis, Landkreis",Ostalbkreis,direct
+08211,"Baden-Baden, Stadtkreis",Baden-Baden Städte,direct
+08212,"Karlsruhe, Stadtkreis",Karlsruhe,direct
+08215,"Karlsruhe, Landkreis",Karlsruhe,direct
+08216,"Rastatt, Landkreis",Rastatt,direct
+08221,"Heidelberg, Stadtkreis",Heidelberg Städte,direct
+08222,"Mannheim, Stadtkreis",Mannheim Städte,direct
+08225,"Neckar-Odenwald-Kreis, Landkreis",Neckar-Odenwald-Kreis,direct
+08226,"Rhein-Neckar-Kreis, Landkreis",Rhein-Neckar-Kreis,direct
+08231,"Pforzheim, Stadtkreis",Pforzheim Städte,direct
+08235,"Calw, Landkreis",Calw,direct
+08236,"Enzkreis, Landkreis",Enz,substring
+08237,"Freudenstadt, Landkreis",Freudenstadt,direct
+08311,"Freiburg im Breisgau, Stadtkreis",Freiburg,substring
+08315,"Breisgau-Hochschwarzwald, Landkreis",Breisgau-Hochschwarzwald,direct
+08316,"Emmendingen, Landkreis",Emmendingen,direct
+08317,"Ortenaukreis, Landkreis",Ortenaukreis,direct
+08325,"Rottweil, Landkreis",Rottweil,direct
+08326,"Schwarzwald-Baar-Kreis, Landkreis",Schwarzwald-Baar-Kreis,direct
+08327,"Tuttlingen, Landkreis",Tuttlingen,direct
+08335,"Konstanz, Landkreis",Konstanz,direct
+08336,"Lörrach, Landkreis",Lörrach,direct
+08337,"Waldshut, Landkreis",Waldshut,direct
+08415,"Reutlingen, Landkreis",Reutlingen,direct
+08416,"Tübingen, Landkreis",Tübingen,direct
+08417,"Zollernalbkreis, Landkreis",Zollernalbkreis,direct
+08421,"Ulm, Stadtkreis",Ulm Städte,direct
+08425,"Alb-Donau-Kreis, Landkreis",Alb-Donau,substring
+08426,"Biberach, Landkreis",Biberach,direct
+08435,"Bodenseekreis, Landkreis",Bodensee,substring
+08436,"Ravensburg, Landkreis",Ravensburg,direct
+08437,"Sigmaringen, Landkreis",Sigmaringen,direct
+09161,"Ingolstadt, kreisfreie Stadt",Ingolstadt Städte,direct
+09162,"München, kreisfreie Stadt",München,direct
+09163,"Rosenheim, kreisfreie Stadt",Rosenheim,direct
+09171,"Altötting, Landkreis",Altötting,direct
+09172,"Berchtesgadener Land, Landkreis",Berchtesgadener Land,direct
+09173,"Bad Tölz-Wolfratshausen, Landkreis",Bad Tölz-Wolfratshausen,direct
+09174,"Dachau, Landkreis",Dachau,direct
+09175,"Ebersberg, Landkreis",Ebersberg,direct
+09176,"Eichstätt, Landkreis",Eichstätt,direct
+09177,"Erding, Landkreis",Erding,direct
+09178,"Freising, Landkreis",Freising,direct
+09179,"Fürstenfeldbruck, Landkreis",Fürstenfeldbruck,direct
+09180,"Garmisch-Partenkirchen, Landkreis",Garmisch-Partenkirchen,direct
+09181,"Landsberg am Lech, Landkreis",Landsberg,substring
+09182,"Miesbach, Landkreis",Miesbach,direct
+09183,"Mühldorf a.Inn, Landkreis",Mühldorf,substring
+09184,"München, Landkreis",München,direct
+09185,"Neuburg-Schrobenhausen, Landkreis",Neuburg-Schrobenhausen,direct
+09186,"Pfaffenhofen a.d.Ilm, Landkreis",Pfaffenhofen,substring
+09187,"Rosenheim, Landkreis",Rosenheim,direct
+09188,"Starnberg, Landkreis",Starnberg,direct
+09189,"Traunstein, Landkreis",Traunstein,direct
+09190,"Weilheim-Schongau, Landkreis",Weilheim-Schongau,direct
+09261,"Landshut, kreisfreie Stadt",Landshut,direct
+09262,"Passau, kreisfreie Stadt",Passau,direct
+09263,"Straubing, kreisfreie Stadt",Straubing Städte,direct
+09271,"Deggendorf, Landkreis",Deggendorf,direct
+09272,"Freyung-Grafenau, Landkreis",Freyung-Grafenau,direct
+09273,"Kelheim, Landkreis",Kelheim,direct
+09274,"Landshut, Landkreis",Landshut,direct
+09275,"Passau, Landkreis",Passau,direct
+09276,"Regen, Landkreis",Regen,direct
+09277,"Rottal-Inn, Landkreis",Rottal-Inn,direct
+09278,"Straubing-Bogen, Landkreis",Straubing-Bogen,direct
+09279,"Dingolfing-Landau, Landkreis",Dingolfing-Landau,direct
+09361,"Amberg, kreisfreie Stadt",Amberg Städte,direct
+09362,"Regensburg, kreisfreie Stadt",Regensburg,direct
+09363,"Weiden i.d.OPf., kreisfreie Stadt",Weiden Städte,substring
+09371,"Amberg-Sulzbach, Landkreis",Amberg-Sulzbach,direct
+09372,"Cham, Landkreis",Cham,direct
+09373,"Neumarkt i.d.OPf., Landkreis",Neumarkt,substring
+09374,"Neustadt a.d.Waldnaab, Landkreis",Neustadt Städte,substring
+09375,"Regensburg, Landkreis",Regensburg,direct
+09376,"Schwandorf, Landkreis",Schwandorf,direct
+09377,"Tirschenreuth, Landkreis",Tirschenreuth,direct
+09461,"Bamberg, kreisfreie Stadt",Bamberg,direct
+09462,"Bayreuth, kreisfreie Stadt",Bayreuth,direct
+09463,"Coburg, kreisfreie Stadt",Coburg,direct
+09464,"Hof, kreisfreie Stadt",Hof,direct
+09471,"Bamberg, Landkreis",Bamberg,direct
+09472,"Bayreuth, Landkreis",Bayreuth,direct
+09473,"Coburg, Landkreis",Coburg,direct
+09474,"Forchheim, Landkreis",Forchheim,direct
+09475,"Hof, Landkreis",Hof,direct
+09476,"Kronach, Landkreis",Kronach,direct
+09477,"Kulmbach, Landkreis",Kulmbach,direct
+09478,"Lichtenfels, Landkreis",Lichtenfels,direct
+09479,"Wunsiedel i.Fichtelgebirge, Landkreis",Wunsiedel,substring
+09561,"Ansbach, kreisfreie Stadt",Ansbach,direct
+09562,"Erlangen, kreisfreie Stadt",Erlangen Städte,direct
+09563,"Fürth, kreisfreie Stadt",Fürth,direct
+09564,"Nürnberg, kreisfreie Stadt",Nürnberger Land,substring
+09565,"Schwabach, kreisfreie Stadt",Schwabach Städte,direct
+09571,"Ansbach, Landkreis",Ansbach,direct
+09572,"Erlangen-Höchstadt, Landkreis",Erlangen-Höchstadt,direct
+09573,"Fürth, Landkreis",Fürth,direct
+09574,"Nürnberger Land, Landkreis",Nürnberger Land,direct
+09575,"Neustadt a.d.Aisch-Bad Windsheim, Landkreis",Neustadt Städte,substring
+09576,"Roth, Landkreis",Roth,direct
+09577,"Weißenburg-Gunzenhausen, Landkreis",Weißenburg-Gunzenhausen,direct
+09661,"Aschaffenburg, kreisfreie Stadt",Aschaffenburg,direct
+09662,"Schweinfurt, kreisfreie Stadt",Schweinfurt,direct
+09663,"Würzburg, kreisfreie Stadt",Würzburg,direct
+09671,"Aschaffenburg, Landkreis",Aschaffenburg,direct
+09672,"Bad Kissingen, Landkreis",Bad Kissingen,direct
+09673,"Rhön-Grabfeld, Landkreis",Rhön-Grabfeld,direct
+09674,"Haßberge, Landkreis",Haßberge,direct
+09675,"Kitzingen, Landkreis",Kitzingen,direct
+09676,"Miltenberg, Landkreis",Miltenberg,direct
+09677,"Main-Spessart, Landkreis",Main-Spessart,direct
+09678,"Schweinfurt, Landkreis",Schweinfurt,direct
+09679,"Würzburg, Landkreis",Würzburg,direct
+09761,"Augsburg, kreisfreie Stadt",Augsburg,direct
+09762,"Kaufbeuren, kreisfreie Stadt",Kaufbeuren Städte,direct
+09763,"Kempten (Allgäu), kreisfreie Stadt",Kempten Städte,direct
+09764,"Memmingen, kreisfreie Stadt",Memmingen Städte,direct
+09771,"Aichach-Friedberg, Landkreis",Aichach-Friedberg,direct
+09772,"Augsburg, Landkreis",Augsburg,direct
+09773,"Dillingen a.d.Donau, Landkreis",Dillingen,substring
+09774,"Günzburg, Landkreis",Günzburg,direct
+09775,"Neu-Ulm, Landkreis",Neu-Ulm,direct
+09776,"Lindau (Bodensee), Landkreis",Lindau,direct
+09777,"Ostallgäu, Landkreis",Ostallgäu,direct
+09778,"Unterallgäu, Landkreis",Unterallgäu,direct
+09779,"Donau-Ries, Landkreis",Donau-Ries,direct
+09780,"Oberallgäu, Landkreis",Oberallgäu,direct
+10041,"Saarbrücken, Regionalverband",Saarbrücken Städte,direct
+10041100,"Saarbrücken, Landeshauptstadt",Saarbrücken Städte,direct
+10042,"Merzig-Wadern, Landkreis",Merzig-Wadern,direct
+10043,"Neunkirchen, Landkreis",Neunkirchen,direct
+10044,"Saarlouis, Landkreis",Saarlouis,direct
+10045,Saarpfalz-Kreis,Saarpfalz,substring
+10046,"St. Wendel, Landkreis",,unmatched
+12051,"Brandenburg an der Havel, kreisfreie Stadt",Brandenburg an der Havel Städte,direct
+12052,"Cottbus, kreisfreie Stadt",Cottbus Städte,direct
+12053,"Frankfurt (Oder), kreisfreie Stadt",Frankfurt am Oder Städte,substring
+12054,"Potsdam, kreisfreie Stadt",Potsdam Städte,direct
+12060,"Barnim, Landkreis",Barnim,direct
+12061,"Dahme-Spreewald, Landkreis",Dahme-Spreewald,direct
+12062,"Elbe-Elster, Landkreis",Elbe-Elster,direct
+12063,"Havelland, Landkreis",Havelland,direct
+12064,"Märkisch-Oderland, Landkreis",Märkisch-Oderland,direct
+12065,"Oberhavel, Landkreis",Oberhavel,direct
+12066,"Oberspreewald-Lausitz, Landkreis",Oberspreewald-Lausitz,direct
+12067,"Oder-Spree, Landkreis",Oder-Spree,direct
+12068,"Ostprignitz-Ruppin, Landkreis",Ostprignitz-Ruppin,direct
+12069,"Potsdam-Mittelmark, Landkreis",Potsdam-Mittelmark,direct
+12070,"Prignitz, Landkreis",Prignitz,direct
+12071,"Spree-Neiße, Landkreis",Spree-Neiße,direct
+12072,"Teltow-Fläming, Landkreis",Teltow-Fläming,direct
+12073,"Uckermark, Landkreis",Uckermark,direct
+13003,"Rostock, kreisfreie Stadt",Rostock Städte,direct
+13004,"Schwerin, kreisfreie Stadt",Schwerin Städte,direct
+13071,"Mecklenburgische Seenplatte, Landkreis",,unmatched
+13072,Landkreis Rostock,Rostock Städte,substring
+13073,"Vorpommern-Rügen, Landkreis",Rügen,substring
+13074,"Nordwestmecklenburg, Landkreis",Nordwestmecklenburg,direct
+13075,"Vorpommern-Greifswald, Landkreis",Greifswald Städte,substring
+13076,"Ludwigslust-Parchim, Landkreis",Ludwigslust,substring
+14511,"Chemnitz, kreisfreie Stadt",Chemnitz Städte,direct
+14521,Erzgebirgskreis,Mittlerer Erzgebirgskreis,substring
+14522,"Mittelsachsen, Landkreis",,unmatched
+14523,Vogtlandkreis,Vogtlandkreis,direct
+14524,"Zwickau, Landkreis",Zwickau Städte,direct
+14612,"Dresden, kreisfreie Stadt",Dresden Städte,direct
+14625,"Bautzen, Landkreis",Bautzen,direct
+14626,"Görlitz, Landkreis",Görlitz Städte,direct
+14627,"Meißen, Landkreis",Meißen,direct
+14628,"Sächsische Schweiz-Osterzgebirge, Landkreis",Sächsische Schweiz,substring
+14713,"Leipzig, kreisfreie Stadt",Leipzig Städte,direct
+14729,"Leipzig, Landkreis",Leipzig Städte,direct
+14730,"Nordsachsen, Landkreis",,unmatched
+15001,"Dessau-Roßlau, kreisfreie Stadt",Dessau Städte,substring
+15002,"Halle (Saale), kreisfreie Stadt",Halle Städte,direct
+15003,"Magdeburg, kreisfreie Stadt, Landeshauptstadt",Magdeburg Städte,direct
+15081,Altmarkkreis Salzwedel,Altmarkkreis Salzwedel,direct
+15082,"Anhalt-Bitterfeld, Landkreis",Bitterfeld,substring
+15083,"Börde, Landkreis",Bördekreis,suffix_add
+15084,Burgenlandkreis,Burgenlandkreis,direct
+15085,"Harz, Landkreis",,unmatched
+15086,"Jerichower Land, Landkreis",Jerichower Land,direct
+15087,"Mansfeld-Südharz, Landkreis",,unmatched
+15088,Saalekreis,,unmatched
+15089,Salzlandkreis,,unmatched
+15090,"Stendal, Landkreis",Stendal,direct
+15091,"Wittenberg, Landkreis",Wittenberg,direct
+16051,"Erfurt, kreisfreie Stadt",Erfurt Städte,direct
+16052,"Gera, kreisfreie Stadt",Gera Städte,direct
+16053,"Jena, kreisfreie Stadt",Jena Städte,direct
+16054,"Suhl, kreisfreie Stadt",Suhl Städte,direct
+16055,"Weimar, kreisfreie Stadt",Weimar Städte,direct
+16061,"Eichsfeld, Landkreis",Eichsfeld,direct
+16062,"Nordhausen, Landkreis",Nordhausen,direct
+16063,Wartburgkreis,Wartburgkreis,direct
+16064,Unstrut-Hainich-Kreis,Unstrut-Hainich,substring
+16065,Kyffhäuserkreis,Kyffhäuserkreis,direct
+16066,"Schmalkalden-Meiningen, Landkreis",Schmalkalden-Meiningen,direct
+16067,"Gotha, Landkreis",Gotha,direct
+16068,"Sömmerda, Landkreis",Sömmerda,direct
+16069,"Hildburghausen, Landkreis",Hildburghausen,direct
+16070,Ilm-Kreis,Ilm-Kreis,direct
+16071,"Weimarer Land, Landkreis",Weimarer Land,direct
+16072,"Sonneberg, Landkreis",Sonneberg,direct
+16073,"Saalfeld-Rudolstadt, Landkreis",Saalfeld-Rudolstadt,direct
+16074,Saale-Holzland-Kreis,Saale-Holzland,substring
+16075,Saale-Orla-Kreis,Saale-Orla,substring
+16076,"Greiz, Landkreis",Greiz,direct
+16077,"Altenburger Land, Landkreis",Altenburger Land,direct
