@@ -1,0 +1,37 @@
+# Virtual Environment
+.venv/
+venv/
+ENV/
+env/
+
+# Python Cache
+**/__pycache__/
+**/*.py[cod]
+**/*$py.class
+
+# Jupyter Notebooks Checkpoints
+**/.ipynb_checkpoints/
+
+# IDE settings
+.vscode/
+.idea/
+
+# OS files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Exclude raw and intermediate datasets in the root
+dataset/
+reports/
+folder_tree.txt
+
+# Exclude proposal, interview guides, and notes
+note*.txt
+*.pdf
+*.docx
+
+# Streamlit local config/logs
+.streamlit/config.toml
+.streamlit/secrets.toml
+**/app.py.log

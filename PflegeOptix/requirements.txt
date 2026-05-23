@@ -1,0 +1,11 @@
+# 🏥 Core Web App Dependencies (Streamlit Deployment)
+streamlit>=1.56.0
+pandas
+numpy
+plotly>=6.6.0
+pulp
+
+# NOTE: The ML models (Prophet, XGBoost, SHAP) are pre-computed 
+# and stored as static datasets/figures. Therefore, heavy packages 
+# like prophet, xgboost, shap, and scikit-learn are NOT required 
+# to run this dashboard in production, leading to 90% faster build times.
