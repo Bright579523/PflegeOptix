@@ -1,6 +1,10 @@
 # PflegeOptix — Elderly Care Planning & Resource Allocation Dashboard
 
-**PflegeOptix** is a decision-support dashboard designed to forecast and optimize the allocation of elderly care home beds across German districts (**Landkreise**) for the period **2025–2040**. 
+**PflegeOptix**
+
+An interactive planning dashboard for forecasting and optimizing elderly care home bed allocation across German districts (Landkreise) for 2025–2040.
+
+🔗 **Live Dashboard**: [pflegeoptix.streamlit.app](https://pflegeoptix.streamlit.app/)
 
 The project addresses the demographic challenge of Germany's aging population by combining socioeconomic predictors, time-series forecasting, and linear programming to ensure that new bed budgets are allocated fairly, preventing undersupply in both dense urban centers and dispersed rural areas.
 
