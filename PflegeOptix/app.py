@@ -24,76 +24,118 @@ st.set_page_config(
     initial_sidebar_state="expanded",
 )
 
-# Inject dark-themed CSS
+# Inject light government-style CSS (Destatis / Eurostat inspired)
 st.markdown("""
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
     /* ── Global ── */
-    .stApp {
-        background: linear-gradient(135deg, #0a0e27 0%, #141b3d 50%, #0d1226 100%);
-        color: #e0e6ed;
+    html, body, .stApp {
+        background-color: #f5f6f8 !important;
+        color: #212121;
+        font-family: 'Inter', sans-serif !important;
     }
-    /* Remove top gradient / header bar */
+    /* Remove top header bar background */
     header[data-testid="stHeader"] {
-        background: transparent !important;
+        background: #ffffff !important;
+        border-bottom: 1px solid #e0e4ea;
     }
     /* ── Sidebar ── */
     section[data-testid="stSidebar"] {
-        background: linear-gradient(180deg, #0f1538 0%, #1a2150 100%);
-        border-right: 1px solid rgba(99,102,241,0.15);
+        background-color: #f0f2f5 !important;
+        border-right: 1px solid #dde2ea;
     }
-    section[data-testid="stSidebar"] .stCaption {
-        color: #a5b4fc !important;
+    section[data-testid="stSidebar"] .stCaption,
+    section[data-testid="stSidebar"] p {
+        color: #5a6473 !important;
     }
-    /* ── Cards (metric containers) ── */
+    /* ── Metric cards ── */
     div[data-testid="stMetric"] {
-        background: rgba(30,40,80,0.6);
-        border: 1px solid rgba(99,102,241,0.2);
-        border-radius: 12px;
+        background: #ffffff;
+        border-left: 3px solid #1d4e89;
+        border-radius: 6px;
         padding: 16px 20px;
-        backdrop-filter: blur(10px);
+        box-shadow: 0 1px 4px rgba(0,0,0,0.08);
     }
     div[data-testid="stMetric"] label {
-        color: #8b95c9 !important;
-        font-size: 0.85rem;
+        color: #5a6473 !important;
+        font-size: 0.82rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 0.03em;
     }
     div[data-testid="stMetric"] [data-testid="stMetricValue"] {
-        color: #ffffff !important;
+        color: #1a2a42 !important;
         font-weight: 700;
+        font-size: 1.5rem;
     }
     /* ── Tabs ── */
     .stTabs [data-baseweb="tab-list"] {
-        gap: 8px;
-        background: rgba(20,27,61,0.5);
-        border-radius: 12px;
-        padding: 4px;
+        gap: 0;
+        background: #ffffff;
+        border-bottom: 2px solid #e0e4ea;
+        border-radius: 0;
+        padding: 0;
     }
     .stTabs [data-baseweb="tab"] {
-        border-radius: 8px;
-        color: #8b95c9;
-        font-weight: 600;
+        border-radius: 0;
+        color: #5a6473;
+        font-weight: 500;
+        padding: 10px 20px;
+        border-bottom: 2px solid transparent;
+        margin-bottom: -2px;
     }
     .stTabs [aria-selected="true"] {
-        background: rgba(99,102,241,0.25) !important;
-        color: #fff !important;
+        background: transparent !important;
+        color: #1d4e89 !important;
+        border-bottom: 2px solid #1d4e89 !important;
+        font-weight: 600;
+    }
+    /* ── Content panels ── */
+    .block-container {
+        background-color: #f5f6f8;
     }
     /* ── DataFrames ── */
-    .stDataFrame { border-radius: 8px; }
+    .stDataFrame {
+        border-radius: 6px;
+        border: 1px solid #e0e4ea;
+    }
     /* ── Headers ── */
-    h1, h2, h3 { color: #c7d0ff !important; }
+    h1 { color: #1a2a42 !important; font-weight: 700; }
+    h2, h3 { color: #1d4e89 !important; font-weight: 600; }
+    h4, h5, h6 { color: #2c3e6b !important; }
     /* ── Plotly chart container ── */
-    .js-plotly-plot .plotly .modebar { opacity: 0.6; }
-    /* ── SHAP images: dark border + rounded ── */
+    .js-plotly-plot .plotly .modebar { opacity: 0.5; }
+    /* ── SHAP images ── */
     .shap-container img {
-        border-radius: 12px;
-        border: 1px solid rgba(99,102,241,0.2);
+        border-radius: 6px;
+        border: 1px solid #e0e4ea;
+        background: #fff;
     }
     /* ── Insight cards ── */
     .insight-card {
-        background: rgba(30,40,80,0.5);
-        border: 1px solid rgba(99,102,241,0.15);
-        border-radius: 12px;
+        background: #ffffff;
+        border: 1px solid #e0e4ea;
+        border-top: 3px solid #1d4e89;
+        border-radius: 6px;
         padding: 20px;
         height: 100%;
+        box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    }
+    .insight-card h4 { color: #1d4e89 !important; margin-top: 0; }
+    .insight-card p { color: #3d4a5c; line-height: 1.6; }
+    /* ── Divider ── */
+    hr { border-color: #e0e4ea !important; }
+    /* ── Buttons ── */
+    .stDownloadButton button {
+        background-color: #1d4e89 !important;
+        color: #ffffff !important;
+        border: none !important;
+        border-radius: 4px !important;
+        font-weight: 600 !important;
+    }
+    .stDownloadButton button:hover {
+        background-color: #163b6b !important;
     }
 </style>
 """, unsafe_allow_html=True)
@@ -181,7 +223,12 @@ df_master["State"] = df_master["AGS"].str[:2].map(STATE_CODES)
 df_pulp["State"]   = df_pulp["AGS"].str[:2].map(STATE_CODES)
 
 # Plotly color schemes
-PLOTLY_TEMPLATE = "plotly_dark"
+PLOTLY_TEMPLATE = "plotly_white"
+# Design tokens
+COLOR_PRIMARY   = "#1d4e89"   # Navy — bars, lines, accents
+COLOR_ACCENT    = "#c0392b"   # Red — urgency / deficit
+COLOR_POSITIVE  = "#2e7d32"   # Green — allocation / coverage
+COLOR_FORECAST  = "#e67e22"   # Amber — forecast lines
 
 # ────────────────────────────────────────────────────────────────
 # 2. SIDEBAR
@@ -279,19 +326,21 @@ def make_germany_choropleth(df_data: pd.DataFrame, color_col: str, color_scale: 
         hover_name="Region",
         hover_data=hover_cols,
         color_continuous_scale=color_scale,
-        map_style="carto-darkmatter",
+        map_style="carto-positron",
         center={"lat": 51.2, "lon": 10.4},
         zoom=4.8,
-        opacity=0.8,
+        opacity=0.85,
     )
     fig.update_layout(
         margin=dict(l=0, r=0, t=0, b=0),
         paper_bgcolor="rgba(0,0,0,0)",
         height=550,
         coloraxis_colorbar=dict(
-            title=dict(text=title_bar, font=dict(color="#c7d0ff")),
-            bgcolor="rgba(20,27,61,0.6)",
-            tickfont=dict(color="#c7d0ff"),
+            title=dict(text=title_bar, font=dict(color="#1a2a42", size=12)),
+            bgcolor="rgba(255,255,255,0.9)",
+            tickfont=dict(color="#3d4a5c"),
+            bordercolor="#e0e4ea",
+            borderwidth=1,
         ),
     )
     return fig
@@ -479,15 +528,15 @@ with tab1:
         top10 = df_pulp_filt[df_pulp_filt["Care_Gap"] > 0].nlargest(10, "Care_Gap")
         fig_bar = px.bar(
             top10, x="Care_Gap", y="Region", orientation="h",
-            color="Care_Gap", color_continuous_scale="Reds",
+            color="Care_Gap", color_continuous_scale="YlOrRd",
             template=PLOTLY_TEMPLATE,
             hover_data={"Care_Gap": ":.1f"}
         )
         fig_bar.update_layout(
             yaxis=dict(autorange="reversed", tickfont=dict(size=11)),
             margin=dict(l=10, r=20, t=10, b=10),
-            paper_bgcolor="rgba(0,0,0,0)",
-            plot_bgcolor="rgba(0,0,0,0)",
+            paper_bgcolor="#ffffff",
+            plot_bgcolor="#ffffff",
             height=550,
             showlegend=False,
             coloraxis_showscale=False,
@@ -541,14 +590,14 @@ with tab2:
     fig_fc.add_trace(go.Scatter(
         x=df_hist["Year"], y=df_hist["Population"],
         mode="lines+markers", name="Historical",
-        line=dict(color="#6366f1", width=3),
+        line=dict(color=COLOR_PRIMARY, width=3),
         marker=dict(size=8),
     ))
 
     fig_fc.add_trace(go.Scatter(
         x=df_fcast["Year"], y=df_fcast["Population"],
         mode="lines+markers", name="Forecast",
-        line=dict(color="#f97316", width=3, dash="dash"),
+        line=dict(color=COLOR_FORECAST, width=3, dash="dash"),
         marker=dict(size=6),
     ))
 
@@ -557,15 +606,15 @@ with tab2:
         x=pd.concat([df_fcast["Year"], df_fcast["Year"][::-1]]),
         y=pd.concat([df_fcast["Pop_Total_Upper"], df_fcast["Pop_Total_Lower"][::-1]]),
         fill="toself",
-        fillcolor="rgba(249,115,22,0.15)",
+        fillcolor="rgba(230,126,34,0.12)",
         line=dict(color="rgba(0,0,0,0)"),
         name="95% CI",
     ))
 
     fig_fc.update_layout(
         template=PLOTLY_TEMPLATE,
-        paper_bgcolor="rgba(0,0,0,0)",
-        plot_bgcolor="rgba(0,0,0,0)",
+        paper_bgcolor="#ffffff",
+        plot_bgcolor="#ffffff",
         height=400,
         margin=dict(l=60, r=20, t=30, b=40),
         xaxis_title="Year",
@@ -647,7 +696,7 @@ with tab3:
         fig_curve.add_trace(go.Scatter(
             x=df_curve["Budget"], y=df_curve["Coverage_Pct"],
             mode="lines+markers", name="Coverage %",
-            line=dict(color="#6366f1", width=3),
+            line=dict(color=COLOR_PRIMARY, width=3),
             marker=dict(size=8),
             hovertemplate="Budget: %{x:,.0f} beds<br>Coverage: %{y:.1f}%<extra></extra>",
         ))
@@ -657,13 +706,13 @@ with tab3:
             fig_curve.add_trace(go.Scatter(
                 x=[budget], y=[cur_cov.iloc[0]],
                 mode="markers", name="Current Budget",
-                marker=dict(color="#f97316", size=14, symbol="star"),
+                marker=dict(color=COLOR_FORECAST, size=14, symbol="star"),
             ))
 
         fig_curve.update_layout(
             template=PLOTLY_TEMPLATE,
-            paper_bgcolor="rgba(0,0,0,0)",
-            plot_bgcolor="rgba(0,0,0,0)",
+            paper_bgcolor="#ffffff",
+            plot_bgcolor="#ffffff",
             height=350,
             margin=dict(l=60, r=20, t=30, b=40),
             xaxis_title="Budget (New Beds)",
@@ -707,17 +756,16 @@ with tab3:
         top10_alloc = df_alloc_filt.nlargest(10, "Beds_Allocated")
         fig_bar2 = px.bar(
             top10_alloc, x="Beds_Allocated", y="Region", orientation="h",
-            color="Beds_Allocated", color_continuous_scale="Tealgrn",
             template=PLOTLY_TEMPLATE,
         )
+        fig_bar2.update_traces(marker_color=COLOR_POSITIVE)
         fig_bar2.update_layout(
             yaxis=dict(autorange="reversed", tickfont=dict(size=11)),
             margin=dict(l=10, r=20, t=10, b=10),
-            paper_bgcolor="rgba(0,0,0,0)",
-            plot_bgcolor="rgba(0,0,0,0)",
+            paper_bgcolor="#ffffff",
+            plot_bgcolor="#ffffff",
             height=550,
             showlegend=False,
-            coloraxis_showscale=False,
         )
         st.plotly_chart(fig_bar2, key="bar_alloc")
 
@@ -840,19 +888,19 @@ with tab4:
             fig_comp = go.Figure()
             fig_comp.add_trace(go.Bar(
                 name=d1, x=compare_labels, y=d1_vals,
-                marker_color="#6366f1",
+                marker_color=COLOR_PRIMARY,
                 text=[f"{v:,.0f}" for v in d1_vals], textposition="outside",
             ))
             fig_comp.add_trace(go.Bar(
                 name=d2, x=compare_labels, y=d2_vals,
-                marker_color="#f97316",
+                marker_color=COLOR_FORECAST,
                 text=[f"{v:,.0f}" for v in d2_vals], textposition="outside",
             ))
             fig_comp.update_layout(
                 barmode="group",
                 template=PLOTLY_TEMPLATE,
-                paper_bgcolor="rgba(0,0,0,0)",
-                plot_bgcolor="rgba(0,0,0,0)",
+                paper_bgcolor="#ffffff",
+                plot_bgcolor="#ffffff",
                 height=400,
                 margin=dict(l=20, r=20, t=40, b=20),
                 legend=dict(orientation="h", y=1.12, x=0.5, xanchor="center"),
