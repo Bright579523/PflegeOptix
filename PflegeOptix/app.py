@@ -151,6 +151,28 @@ st.markdown("""
     .stDownloadButton button:hover {
         background-color: #163b6b !important;
     }
+    /* ── Selectbox / Dropdown ── */
+    div[data-baseweb="select"] > div {
+        background-color: #ffffff !important;
+        border: 1px solid #c5ccd6 !important;
+        color: #1a2a42 !important;
+    }
+    div[data-baseweb="select"] span {
+        color: #1a2a42 !important;
+    }
+    /* Selectbox label */
+    .stSelectbox label {
+        color: #3d4a5c !important;
+        font-weight: 500;
+    }
+    /* ── Caption text ── */
+    .stCaption, [data-testid="stCaptionContainer"] p {
+        color: #5a6473 !important;
+    }
+    /* ── Expander ── */
+    [data-testid="stExpander"] summary span {
+        color: #1a2a42 !important;
+    }
 </style>
 """, unsafe_allow_html=True)
 
@@ -246,7 +268,7 @@ COLOR_FORECAST  = "#e67e22"   # Amber — forecast lines
 
 # Global Plotly font override — ensures all chart text is readable
 PLOTLY_FONT = dict(
-    font=dict(family="Inter, sans-serif", size=13, color="#1a2a42"),
+    font=dict(family="Inter, sans-serif", size=14, color="#1a2a42"),
 )
 
 # ────────────────────────────────────────────────────────────────
@@ -1094,14 +1116,14 @@ with tab5:
 
     st.markdown("""
     <div style="background-color:rgba(249, 115, 22, 0.1); border-left: 5px solid #f97316; padding: 15px; border-radius: 4px; margin-top: 15px; margin-bottom: 20px;">
-        <h4 style="color:#f97316; margin-top:0;">💡 Understanding the "Ablation Study" (Proxy Leakage)</h4>
-        <p style="font-size:0.95rem; line-height:1.5; color:#e0e6ed;">
+        <h4 style="color:#c0392b; margin-top:0;">💡 Understanding the "Ablation Study" (Proxy Leakage)</h4>
+        <p style="font-size:0.95rem; line-height:1.5; color:#2c3e50;">
             <b>Why is a lower R² (0.43) better than a higher R² (0.90)?</b><br>
             In predictive modeling, using existing supply to predict demand creates a feedback loop known as <b>Proxy Leakage</b>. 
             For example, using the number of existing care homes to predict where new care homes are needed will show perfect accuracy (R² = 0.90), 
             but it is completely useless for planning — it just tells you where care homes already are.
         </p>
-        <p style="font-size:0.95rem; line-height:1.5; margin-bottom:0; color:#e0e6ed;">
+        <p style="font-size:0.95rem; line-height:1.5; margin-bottom:0; color:#2c3e50;">
             <i><b>Analogy:</b> Predicting tomorrow's weather by looking at how many people are holding umbrellas today is highly accurate, 
             but it doesn't give you a real weather forecast. It just describes the present.</i>
         </p>
