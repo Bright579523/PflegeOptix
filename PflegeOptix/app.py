@@ -69,27 +69,33 @@ st.markdown("""
         font-weight: 700;
         font-size: 1.5rem;
     }
-    /* ── Tabs ── */
+    /* ── Tabs (prominent pill style) ── */
     .stTabs [data-baseweb="tab-list"] {
-        gap: 0;
-        background: #ffffff;
-        border-bottom: 2px solid #e0e4ea;
-        border-radius: 0;
-        padding: 0;
+        gap: 6px;
+        background: #e8ecf2;
+        border-radius: 8px;
+        padding: 5px;
+        border-bottom: none;
     }
     .stTabs [data-baseweb="tab"] {
-        border-radius: 0;
-        color: #5a6473;
-        font-weight: 500;
-        padding: 10px 20px;
-        border-bottom: 2px solid transparent;
-        margin-bottom: -2px;
+        border-radius: 6px;
+        color: #3d4a5c;
+        font-weight: 600;
+        font-size: 0.92rem;
+        padding: 10px 18px;
+        border-bottom: none;
+        margin-bottom: 0;
+    }
+    .stTabs [data-baseweb="tab"]:hover {
+        background: rgba(29,78,137,0.08);
+        color: #1d4e89;
     }
     .stTabs [aria-selected="true"] {
-        background: transparent !important;
-        color: #1d4e89 !important;
-        border-bottom: 2px solid #1d4e89 !important;
-        font-weight: 600;
+        background: #1d4e89 !important;
+        color: #ffffff !important;
+        border-bottom: none !important;
+        font-weight: 700;
+        box-shadow: 0 2px 6px rgba(29,78,137,0.25);
     }
     /* ── Content panels ── */
     .block-container {
@@ -99,6 +105,14 @@ st.markdown("""
     .stDataFrame {
         border-radius: 6px;
         border: 1px solid #e0e4ea;
+    }
+    /* Force dark text in all table cells */
+    .stDataFrame [data-testid="stDataFrameResizable"],
+    .stDataFrame table,
+    .stDataFrame td, .stDataFrame th,
+    .stDataFrame [class*="cell"],
+    [data-testid="stDataFrame"] * {
+        color: #1a2a42 !important;
     }
     /* ── Headers ── */
     h1 { color: #1a2a42 !important; font-weight: 700; }
@@ -230,6 +244,13 @@ COLOR_ACCENT    = "#c0392b"   # Red — urgency / deficit
 COLOR_POSITIVE  = "#2e7d32"   # Green — allocation / coverage
 COLOR_FORECAST  = "#e67e22"   # Amber — forecast lines
 
+# Global Plotly font override — ensures all chart text is readable
+PLOTLY_FONT = dict(
+    font=dict(family="Inter, sans-serif", size=13, color="#1a2a42"),
+    xaxis=dict(tickfont=dict(color="#3d4a5c", size=12), title_font=dict(color="#1a2a42", size=13)),
+    yaxis=dict(tickfont=dict(color="#3d4a5c", size=12), title_font=dict(color="#1a2a42", size=13)),
+)
+
 # ────────────────────────────────────────────────────────────────
 # 2. SIDEBAR
 # ────────────────────────────────────────────────────────────────
@@ -291,7 +312,7 @@ with st.sidebar:
     st.write("") # small spacing
     
     st.markdown(
-        "<small style='color:#a5b4fc;'>"
+        "<small style='color:#3d4a5c;'>"
         "📊 Data: INKAR + Pflegestatistik (2015-2023)<br>"
         "📈 Forecast: Prophet (2025-2040)<br>"
         "🧠 Model: XGBoost + SHAP<br>"
@@ -452,10 +473,9 @@ def get_efficiency_curve(state: str) -> pd.DataFrame:
 
 
 # ────────────────────────────────────────────────────────────────
-# 5. HEADER
+# 5. HEADER (project name is already in sidebar, so only show subtitle here)
 # ────────────────────────────────────────────────────────────────
-st.markdown("# 🏥 PflegeOptix — Elderly Care Planning Dashboard")
-st.caption("An AI-driven decision support tool for care bed planning in Germany (2025-2040)")
+st.caption("Elderly care bed planning — Germany (2025-2040)")
 
 # ────────────────────────────────────────────────────────────────
 # 6. TABS
@@ -533,13 +553,14 @@ with tab1:
             hover_data={"Care_Gap": ":.1f"}
         )
         fig_bar.update_layout(
-            yaxis=dict(autorange="reversed", tickfont=dict(size=11)),
+            yaxis=dict(autorange="reversed", tickfont=dict(size=11, color="#1a2a42")),
             margin=dict(l=10, r=20, t=10, b=10),
             paper_bgcolor="#ffffff",
             plot_bgcolor="#ffffff",
             height=550,
             showlegend=False,
             coloraxis_showscale=False,
+            **PLOTLY_FONT,
         )
         st.plotly_chart(fig_bar, key="bar_overview")
 
@@ -620,6 +641,7 @@ with tab2:
         xaxis_title="Year",
         yaxis_title="Total Population",
         legend=dict(orientation="h", y=1.12, x=0.5, xanchor="center"),
+        **PLOTLY_FONT,
     )
     st.plotly_chart(fig_fc, key="chart_forecast")
     
@@ -718,6 +740,7 @@ with tab3:
             xaxis_title="Budget (New Beds)",
             yaxis_title="Coverage (%)",
             legend=dict(orientation="h", y=1.12, x=0.5, xanchor="center"),
+            **PLOTLY_FONT,
         )
         st.plotly_chart(fig_curve, width="stretch", key="chart_curve")
 
@@ -760,12 +783,13 @@ with tab3:
         )
         fig_bar2.update_traces(marker_color=COLOR_POSITIVE)
         fig_bar2.update_layout(
-            yaxis=dict(autorange="reversed", tickfont=dict(size=11)),
+            yaxis=dict(autorange="reversed", tickfont=dict(size=11, color="#1a2a42")),
             margin=dict(l=10, r=20, t=10, b=10),
             paper_bgcolor="#ffffff",
             plot_bgcolor="#ffffff",
             height=550,
             showlegend=False,
+            **PLOTLY_FONT,
         )
         st.plotly_chart(fig_bar2, key="bar_alloc")
 
@@ -904,6 +928,7 @@ with tab4:
                 height=400,
                 margin=dict(l=20, r=20, t=40, b=20),
                 legend=dict(orientation="h", y=1.12, x=0.5, xanchor="center"),
+                **PLOTLY_FONT,
             )
             st.plotly_chart(fig_comp, width="stretch", key="chart_comp_bar")
 
