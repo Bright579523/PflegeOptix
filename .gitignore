@@ -30,6 +30,8 @@ Desktop.ini
 note*.txt
 *.pdf
 *.docx
+/notes/
+
 
 # Streamlit local config/logs
 .streamlit/config.toml
