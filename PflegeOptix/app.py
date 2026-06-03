@@ -247,8 +247,6 @@ COLOR_FORECAST  = "#e67e22"   # Amber — forecast lines
 # Global Plotly font override — ensures all chart text is readable
 PLOTLY_FONT = dict(
     font=dict(family="Inter, sans-serif", size=13, color="#1a2a42"),
-    xaxis=dict(tickfont=dict(color="#3d4a5c", size=12), title_font=dict(color="#1a2a42", size=13)),
-    yaxis=dict(tickfont=dict(color="#3d4a5c", size=12), title_font=dict(color="#1a2a42", size=13)),
 )
 
 # ────────────────────────────────────────────────────────────────
